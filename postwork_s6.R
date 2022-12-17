@@ -129,3 +129,17 @@ predict(m0, newdata = data2, interval = "confidence", level = 0.95)
 2 29.51896 28.30848 30.72943
 3 32.74790 31.22156 34.27423
 4 35.97684 34.12708 37.82659"
+
+data3 <- data.frame(
+  TV = c(280, 300, 320, 340),
+  Radio = c(0, 0, 0, 0),
+  Newspaper = c(0, 0, 0, 0)
+)
+
+
+predict(m0, newdata = data3, interval = "confidence", level = 0.95)
+"   fit      lwr      upr
+1 19.86994 19.25196 20.48792
+2 20.95886 20.30538 21.61234
+3 22.04777 21.35635 22.73919
+4 23.13669 22.40527 23.86811"
