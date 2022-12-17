@@ -78,12 +78,12 @@ var.test(virginica$Petal.Length, versicolor$Petal.Length, ratio = 1,
 
 t.test(x=virginica$Petal.Length,
        y= versicolor$Petal.Length,
-      alternative = "greater", mu=1.1, var.equal = FALSE)
+      alternative = "greater", mu=1.1, var.equal = FALSE)   # p-value = 0.03206
 
 #  nivel de confianza:              90%, 95%,  99%
 #  nivel de significacia : (1 -NC): 0.1, 0.05, 0.01
-# A nivel de confdianza del 99% existe evidencia para rechazar la hipotesis Ho
-# es decir que en promedio el petalo virginica no es 1.1 cm más largo que el versicolor
+# A nivel de confdianza del 99% NO existe evidencia para rechazar la hipotesis Ho
+# es decir que en promedio el petalo virginica  es 1.1 cm más largo que el versicolor
 
 
 
